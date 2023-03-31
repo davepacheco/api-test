@@ -43,7 +43,7 @@ async fn get_thing(
 
 and the client can see it too!  The program uses the progenitor-generated client with "replace" to use its `Thing`, makes a request, and prints it out:
 
-```rust
+```
 client got: Ok(Thing { a: "ok", b: "oops" })
 ```
 
