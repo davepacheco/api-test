@@ -62,6 +62,7 @@ async fn main() -> Result<(), String> {
 // HTTP API interface
 
 #[derive(Debug, Serialize, Deserialize, JsonSchema)]
+#[serde(deny_unknown_fields)]
 pub struct Thing {
     a: String,
     #[schemars(skip)]
